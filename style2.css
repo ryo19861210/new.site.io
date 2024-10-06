@@ -8,6 +8,11 @@ img {
   width: 100%;
 }
 
+.container {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
 .header {
   background: linear-gradient(0deg, #ff6600, #e66f00);
   background: linear-gradient(to top, transparent 0%, transparent 0%, #e66f00 100%);
@@ -21,8 +26,14 @@ img {
   justify-content: space-between;
   align-items: center;
 }
-.header_logo :hover {
-  opacity: 0.7;
+.header_logo {
+  width: 5.2083333333vw;
+  height: 5.2083333333vw;
+  padding: 1.0416666667vw;
+  transition: 0.3s;
+}
+.header_logo:hover {
+  opacity: 0.5;
 }
 .header_menu {
   display: flex;
@@ -31,8 +42,8 @@ img {
 .header_menu_logo {
   margin-right: 10px;
 }
-.header_menu_logo :hover {
-  opacity: 0.7;
+.header_menu_logo:hover {
+  opacity: 0.5;
 }
 .header_menu_content {
   display: flex;
@@ -41,10 +52,13 @@ img {
   display: flex;
 }
 .header_menu_content ul li {
-  margin-right: 10px;
+  margin-right: 2.6041666667vw;
+  color: #ffffff;
+  text-shadow: #000000 2px 2px 3px;
+  transition: 0.3s;
 }
-.header_menu_content ul li :hover {
-  opacity: 0.7;
+.header_menu_content ul li:hover {
+  opacity: 0.5;
 }
 
 .mainvisual {
@@ -85,7 +99,6 @@ img {
   margin-top: 58.59375vw;
 }
 .content_title {
-  margin-right: 6.5104166667vw;
   color: #ffffff;
   font-size: 2.8645833333vw;
   letter-spacing: 1.0416666667vw;
@@ -184,4 +197,99 @@ img {
 .other_content .content_box .content_title_sub {
   text-align: center;
   font-size: 1.5625vw;
+}
+
+.content_cards {
+  margin-top: 13.0208333333vw;
+}
+.content_cards_card {
+  background-color: #fd2323;
+  color: #fffb00;
+  padding: 6.5104166667vw;
+  width: 80%;
+  border-radius: 0px 30px 30px 0px;
+  margin-bottom: 13.0208333333vw;
+}
+.content_cards_card_title {
+  font-size: 2.6041666667vw;
+  font-weight: bold;
+  letter-spacing: 0.6510416667vw;
+}
+.content_cards_card_text {
+  margin-top: 2.6041666667vw;
+  letter-spacing: 0.6510416667vw;
+  color: #ffffff;
+}
+.content_cards_card_text_sub {
+  margin-top: 1.3020833333vw;
+  font-size: 1.5625vw;
+  color: #ffffff;
+}
+.content_cards .right {
+  text-align: right;
+  margin-right: 0;
+  margin-left: 20%;
+  border-radius: 30px 0px 0px 30px;
+}
+
+#contact .other_content .content_title_sub {
+  text-align: center;
+  font-size: 1.5625vw;
+}
+#contact .other_content .content_title_sub2 {
+  letter-spacing: 0.6510416667vw;
+  font-size: 1.8229166667vw;
+  background-color: #d0d0d0;
+  padding: 6.5104166667vw;
+  line-height: 1.5;
+}
+
+.footer {
+  margin-top: 26.0416666667vw;
+  background-color: #00446c;
+  padding-top: 13.0208333333vw;
+  text-align: center;
+  color: #d9d9d9;
+}
+.footer_logo {
+  width: 7.8125vw;
+  margin: 0 auto;
+  margin-bottom: 2.6041666667vw;
+  transition: 0.3s;
+}
+.footer_logo:hover {
+  opacity: 0.3;
+}
+.footer_info {
+  font-size: 2.34375vw;
+  padding-bottom: 13.0208333333vw;
+}
+.footer_copy {
+  padding-bottom: 1.3020833333vw;
+  font-size: 1.5625vw;
+}
+
+.content_cards_card {
+  overflow: hidden;
+}
+
+.slidein {
+  /* 装飾に関わるスタイルは省略 */
+  transition: 1s cubic-bezier(0.75, 0, 0.25, 1);
+}
+
+.slide_left {
+  transform: translateX(calc(-50vw - 50%));
+}
+
+.slide_right {
+  transform: translateX(calc(50vw + 50%));
+}
+
+.show {
+  transform: translateX(0);
+}
+
+.slider {
+  width: 100%;
 }/*# sourceMappingURL=style2.css.map */

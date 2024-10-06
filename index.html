@@ -7,31 +7,50 @@
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style2.css">
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+  />
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+  />
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  >
+</script>
+  <script src="script.js"></script>
 </head>
 
 <header class="header">
   <div class="header_logo">
-    <a href="#"><img src="#" alt="会社ロゴ"></a>
+    <a href="#">
+      <img src="img/logo.jpg" alt="会社ロゴ">
+    </a>
   </div>
   <nav class="header_menu">
-    <div class="header_menu_logo">
+    <!-- <div class="header_menu_logo">
       <a href="#"><img src="#" alt="会社ロゴ"></a>
-    </div>
+    </div> -->
     <div class="header_menu_content">
       <ul>
         <li><a href="#">
             <p>HOME</p>
           </a></li>
-        <li><a href="#">
+        <li><a href="#company">
+            <p>当社について</p>
+          </a></li>
+        <li><a href="#service">
             <p>サービス案内</p>
           </a></li>
-        <li><a href="#">
-            <p>ブログ</p>
-          </a></li>
-        <li><a href="#">
-            <p>企業情報</p>
-          </a></li>
-        <li><a href="#">
+        <li><a href="#contact">
             <p>お問い合わせ</p>
           </a></li>
         <!-- <li><a href="#"><p>電話番号</p></a></li> ←SP時に表示！-->
@@ -43,7 +62,7 @@
 <body>
   <div class="mainvisual">
     <div class="mainvisual_img">
-      <img src="https://github.com/ryo19861210/new.site.io/blob/main/mainvisual.jpg?raw=true" alt="メイン画像が入ります">
+      <img src="img/mainvisual.jpg" alt="メイン画像が入ります">
       <div class="mainvisual_img_content">
         <h1 class="mainvisual_img_content_text">カラダの話は、ココロの話から。</h1>
         <p class="mainvisual_img_content_text_sub">精神科医監修の</p>
@@ -53,130 +72,130 @@
   </div>
 
   <!-- 当社についてここから -->
-  <div class="content">
-    <h1 class="content_title">
-      当社ついて
-    </h1>
-    <div class="content_text">
-      <h2>精神科医監修の食事コーチングサービス</h2>
-      <p>タウンドクター株式会社では、管理栄養士による食事コーチングサービス「N・Partner（ニューパートナー）」を展開しています。
-        「N・Partner」は、テクノロジーを活用し、対象者1人1人の生活環境や嗜好性などに合わせたオーダーメイドの指導を提供することで症状の進行を抑制します。</p>
-      <a class="content_text_button" href="#">
-        詳細はこちら
-      </a>
+  <section id="company">
+    <div class="container">
+      <div class="content">
+        <h1 class="content_title">
+          当社ついて
+        </h1>
+        <div class="content_text">
+          <h2>精神科医監修の食事コーチングサービス</h2>
+          <p>タウンドクター株式会社では、管理栄養士による食事コーチングサービス「N・Partner（ニューパートナー）」を展開しています。
+            「N・Partner」は、テクノロジーを活用し、対象者1人1人の生活環境や嗜好性などに合わせたオーダーメイドの指導を提供することで症状の進行を抑制します。</p>
+          <a class="content_text_button" href="#">
+            詳細はこちら
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+
   <!-- 当社についてここまで -->
 
   <!-- サービス案内ここから -->
-  <div class="content other_content">
-    <div class="content_box">
-      <div class="content_title">
-        <h1>SERVICE</h1>
-        <p class="content_title_sub">
-          サービス案内
-        </p>
-      </div>
+  <section id="service">
+    <div class="content other_content">
+      <div class="container">
+        <div class="content_box">
+          <div class="content_title">
+            <h1>SERVICE</h1>
+            <p class="content_title_sub">
+              サービス案内
+            </p>
+          </div>
 
-      <div class="content_text">
-        <p>
-          クリニック向け・健康保険組合向け・自治体向けと、サービス内容を対象別に詳しくご案内いたします。
-        </p>
+          <div class="content_text">
+            <h2>
+              管理栄養士による身体づくりセミナー
+            </h2>
+            <p>
+              スポンサー様のメリットや事例をご紹介しています。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- ↓SPではスライダー式へ -->
+      <div class="content_cards">
+        <div class="content_cards_card slidein slide_left">
+          <h2 class="content_cards_card_title">
+            選手や保護者の食育力の向上
+          </h2>
+          <p class="content_cards_card_text">
+            こちらには説明が入ります
+          </p>
+        </div>
+        <div class="content_cards_card right slidein slide_right">
+          <h2 class="content_cards_card_title">
+            スポンサー商品の集客・成約率UP
+          </h2>
+          <p class="content_cards_card_text">
+            集客力1.2倍、成約率1.3倍!!
+          <p class="content_cards_card_text_sub">
+            ※上場企業の取引先調べ
+          </p>
+          </p>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider_img">
+          <img src="img/seminer1.jpg" alt="セミナー画像">
+        </div>
+        <div class="slider_img">
+          <img src="img/seminer2.jpg" alt="セミナー画像">
+        </div>
+        <div class="slider_img">
+          <img src="img/seminer3.jpg" alt="セミナー画像">
+        </div>
+        <div class="slider_img">
+          <img src="img/seminer4.jpg" alt="セミナー画像">
+        </div>
+        <div class="slider_img">
+          <img src="img/seminer5.jpg" alt="セミナー画像">
+        </div>
+        <div class="slider_img">
+          <img src="img/seminer6.jpg" alt="セミナー画像">
+        </div>
       </div>
     </div>
-    <!-- ↓SPではスライダー式へ -->
-    <div class="content_cards">
-      <a class="content_cards_card" href="#">
-        <h2 class="content_cards_card_title">
-          テスト
-        </h2>
-        <p class="content_cards_card_text">
-          こちらには説明が入ります
-        </p>
-        <p class="content_cards_card_minititle">
-          SERVICE
-        </p>
-        <p class="content_cards_card_number">
-          01
-        </p>
-      </a>
-      <a class="content_cards_card" href="#">
-        <h2 class="content_cards_card_title">
-          テスト
-        </h2>
-        <p class="content_cards_card_text">
-          こちらには説明が入ります
-        </p>
-        <p class="content_cards_card_minititle">
-          SERVICE
-        </p>
-        <p class="content_cards_card_number">
-          02
-        </p>
-      </a>
-      <a class="content_cards_card" href="#">
-        <h2 class="content_cards_card_title">
-          テスト
-        </h2>
-        <p class="content_cards_card_text">
-          こちらには説明が入ります
-        </p>
-        <p class="content_cards_card_minititle">
-          SERVICE
-        </p>
-        <p class="content_cards_card_number">
-          03
-        </p>
-      </a>
-      <a class="content_cards_card" href="#">
-        <h2 class="content_cards_card_title">
-          テスト
-        </h2>
-        <p class="content_cards_card_text">
-          こちらには説明が入ります
-        </p>
-        <p class="content_cards_card_minititle">
-          SERVICE
-        </p>
-        <p class="content_cards_card_number">
-          04
-        </p>
-      </a>
-    </div>
-  </div>
+  </section>
   <!-- サービス案内ここまで -->
 
   <!-- お問い合わせはここから -->
-  <div class="content other_content">
-    <h1 class="content_title">
-      CONTACT
-    </h1>
-    <p class="content_title_sub">
-      お問い合わせ
-    </p>
-    <p class="content_title_sub2">
-      当社へのお問い合わせ・ご相談は
-      お気軽に以下のフォームからご連絡ください。
-    </p>
-    <div class="content_button">
-      <a class="content_button" href="#" target="_blank">
-        <p>
-          お問い合わせフォーム
+ <!-- <div class="container">
+  <section id="contact">
+    <div class="content other_content">
+      <div class="content_title">
+        <h2>CONTACT</h2>
+        <p class="content_title_sub">
+          お問い合わせ
         </p>
-      </a>
-      <a class="content_button" href="#" target="_blank">
-        <p>
-          お電話でのお問い合わせ
-        </p>
-      </a>
+      </div>
+      <p class="content_title_sub2">
+        当社へのお問い合わせ・ご相談は<br>
+        お気軽に以下のフォームからご連絡ください。
+      </p>
+      <div class="content_button">
+        <a class="content_button" href="#" target="_blank">
+          <p>
+            お問い合わせフォーム
+          </p>
+        </a>
+        <a class="content_button" href="#" target="_blank">
+          <p>
+            お電話でのお問い合わせ
+          </p>
+        </a>
+      </div>
     </div>
-  </div>
+  </section>
+</div> -->
   <!-- お問い合わせはここまで -->
+
 </body>
 <footer class="footer">
   <div class="footer_logo">
     <!-- ここには会社ロゴが入ります -->
-    <p>ここには会社ロゴが入ります</p>
+    <a href="#"><img src="img/logo.jpg" alt="会社ロゴ"></a>
   </div>
   <p class="footer_info">
     ここには住所等が入ります

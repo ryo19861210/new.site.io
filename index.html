@@ -7,38 +7,24 @@
   <title>Document</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style2.css">
-  <script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-  />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-  />
-  <script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  >
-</script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
+  </script>
   <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
-<header class="header">
+<header class="header pc-only">
   <div class="header_logo">
     <a href="#">
-      <img src="https://github.com/ryo19861210/new.site.io/blob/main/logo.jpg?raw=true" alt="会社ロゴ">
+      <img src="img/logo.jpg" alt="会社ロゴ">
     </a>
   </div>
   <nav class="header_menu">
-    <!-- <div class="header_menu_logo">
-      <a href="#"><img src="#" alt="会社ロゴ"></a>
-    </div> -->
     <div class="header_menu_content">
       <ul>
         <li><a href="#">
@@ -50,24 +36,50 @@
         <li><a href="#service">
             <p>サービス案内</p>
           </a></li>
-        <li><a href="#contact">
-            <p>お問い合わせ</p>
-          </a></li>
-        <!-- <li><a href="#"><p>電話番号</p></a></li> ←SP時に表示！-->
       </ul>
     </div>
   </nav>
 </header>
 
+<header class="headerham sp-only">
+  <div class="headerham__inner">
+    <h1 class="headerham__title header-title">
+      <a href="#">
+        <img src="img/logo.jpg" alt="会社ロゴ">
+      </a>
+    </h1>
+
+    <nav class="headerham__nav nav" id="js-nav">
+      <ul class="nav__items nav-items">
+        <li class="nav-items__item"><a href="#">HOME</a></li>
+        <li class="nav-items__item"><a href="#company">当社について</a></li>
+        <li class="nav-items__item"><a href="#service">サービス案内</a></li>
+      </ul>
+    </nav>
+    <button class="headerham__hamburger hamburger" id="js-hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
 <body>
   <div class="mainvisual">
-    <div class="mainvisual_img">
-      <img src="https://github.com/ryo19861210/new.site.io/blob/main/mainvisual.jpg?raw=true" alt="メイン画像が入ります">
-      <div class="mainvisual_img_content">
-        <h1 class="mainvisual_img_content_text">カラダの話は、ココロの話から。</h1>
-        <p class="mainvisual_img_content_text_sub">精神科医監修の</p>
-        <p class="mainvisual_img_content_text_sub">オーダーメイド食事コーチングサービス</p>
-      </div>
+    <div class="mainvisual_img main_slide">
+      <li>
+        <img src="img/mainvisual.jpg" alt="メイン画像">
+      </li>
+      <li>
+        <img src="img/mainvisual2.jpg" alt="メイン画像">
+      </li>
+      <li>
+        <img src="img/mainvisual3.jpg" alt="メイン画像">
+      </li>
+    </div>
+    <div class="mainvisual_img_content">
+      <h1 class="mainvisual_img_content_text">食で育む価値と町</h1>
+      <p class="mainvisual_img_content_text_sub">管理栄養士による体づくりセミナー</p>
     </div>
   </div>
 
@@ -79,12 +91,9 @@
           当社ついて
         </h1>
         <div class="content_text">
-          <h2>精神科医監修の食事コーチングサービス</h2>
-          <p>タウンドクター株式会社では、管理栄養士による食事コーチングサービス「N・Partner（ニューパートナー）」を展開しています。
-            「N・Partner」は、テクノロジーを活用し、対象者1人1人の生活環境や嗜好性などに合わせたオーダーメイドの指導を提供することで症状の進行を抑制します。</p>
-          <a class="content_text_button" href="#">
-            詳細はこちら
-          </a>
+          <h2>管理栄養士の身体づくりセミナー</h2>
+          <p>合同会社EG-WORKOUTではクラブチームのスポンサー企業様からタイアップセミナーの依頼を頂いております。
+          クラブチームやスポーツ選手に指導経験がある管理栄養士、栄養士に特化しているためアスリートの身体作りセミナーの経験が豊富です。</p>
         </div>
       </div>
     </div>
@@ -109,7 +118,7 @@
               管理栄養士による身体づくりセミナー
             </h2>
             <p>
-              スポンサー様のメリットや事例をご紹介しています。
+              事例やスポンサー様のメリットをご紹介しています。
             </p>
           </div>
         </div>
@@ -121,10 +130,35 @@
             選手や保護者の食育力の向上
           </h2>
           <p class="content_cards_card_text">
-            こちらには説明が入ります
+            よく頂く依頼としては...
+          </p>
+          <ul class="ul">
+            <li>
+              <p class="content_cards_card_text">
+                身体を大きくするための食事
+              </p>
+            </li>
+            <li>
+              <p class="content_cards_card_text">
+                筋肉をつけるための食事
+              </p>
+            </li>
+            <li>
+              <p class="content_cards_card_text">
+                熱中症予防のための食事
+              </p>
+            </li>
+            <li>
+              <p class="content_cards_card_text">
+                身体を休めるための食事
+              </p>
+            </li>
+          </ul>
+          <p class="content_cards_card_text">
+            などがございます。
           </p>
         </div>
-        <div class="content_cards_card right slidein slide_right">
+        <div class="content_cards_card  slidein slide_left">
           <h2 class="content_cards_card_title">
             スポンサー商品の集客・成約率UP
           </h2>
@@ -138,22 +172,22 @@
       </div>
       <div class="slider">
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer1.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer1.jpg" alt="セミナー画像">
         </div>
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer2.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer2.jpg" alt="セミナー画像">
         </div>
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer3.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer3.jpg" alt="セミナー画像">
         </div>
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer4.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer4.jpg" alt="セミナー画像">
         </div>
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer5.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer5.jpg" alt="セミナー画像">
         </div>
         <div class="slider_img">
-          <img src="https://github.com/ryo19861210/new.site.io/blob/main/seminer6.jpg?raw=true" alt="セミナー画像">
+          <img src="img/seminer6.jpg" alt="セミナー画像">
         </div>
       </div>
     </div>
@@ -161,7 +195,7 @@
   <!-- サービス案内ここまで -->
 
   <!-- お問い合わせはここから -->
- <!-- <div class="container">
+  <!-- <div class="container">
   <section id="contact">
     <div class="content other_content">
       <div class="content_title">
@@ -195,13 +229,24 @@
 <footer class="footer">
   <div class="footer_logo">
     <!-- ここには会社ロゴが入ります -->
-    <a href="#"><img src="https://github.com/ryo19861210/new.site.io/blob/main/logo.jpg?raw=true" alt="会社ロゴ"></a>
+    <a href="#"><img src="img/logo.jpg" alt="会社ロゴ"></a>
   </div>
   <p class="footer_info">
-    ここには住所等が入ります
+    合同会社EG-WORKOUT
+    <p class="footer_info_text">
+      大阪府堺市西区鳳
+    </p>
+  </p>
+  <p class="footer_sns">
+    <a href="mailto:egworkout8@gmail.com" class="mail_icon">
+      <img src="img/mail.png" alt="メールアイコン">
+    </a>
+      <a href="https://www.instagram.com/eg_workout/profilecard/?igsh=MWc0em04dmZtcmN6aA==" class="flowbtn my_instagram1">
+      <i class="fa-brands fa-instagram"></i>
+      </a>
   </p>
   <p class="footer_copy">
-    &copy; 2024 EG-WORKOUT.
+    &copy; 2024 EG-WORKOUT
   </p>
 </footer>
 

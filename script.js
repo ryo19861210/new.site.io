@@ -33,3 +33,29 @@ $(function(){
     ]
   });
 });
+
+$(window).on('load', function() {
+  $(function () {
+      $(".main_slide").slick({
+          autoplay: true, // 自動再生ON
+          fade: true, // フェードON
+          dots: false, // ドットOFF
+          arrows: false, // 矢印OFF
+          speed: 4000, // スライド、フェードアニメーションの速度2000ミリ秒
+          autoplaySpeed: 3500, // 自動再生速度4000ミリ秒
+          pauseOnFocus: false, // フォーカスで一時停止OFF
+          pauseOnHover: false, // マウスホバーで一時停止OFF
+      });
+  });
+});
+
+$(document).ready(function() {
+  // ハンバーガーメニューのボタンがクリックされたとき
+  $('#js-hamburger').on('click', function() {
+    // ナビゲーションメニューの表示状態をトグル
+    $('#js-nav').toggleClass('active');
+    
+    // ハンバーガーメニューのスタイルを変更
+    $(this).toggleClass('active');
+  });
+});

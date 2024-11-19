@@ -10,8 +10,8 @@ img {
 }
 
 .container {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 4%;
+  padding-right: 4%;
 }
 
 .header {
@@ -28,8 +28,8 @@ img {
   align-items: center;
 }
 .header_logo {
-  width: 5.2083333333vw;
-  height: 5.2083333333vw;
+  width: 6.5104166667vw;
+  height: 6.5104166667vw;
   padding: 1.0416666667vw;
   transition: 0.3s;
 }
@@ -41,7 +41,7 @@ img {
   align-items: center;
 }
 .header_menu_logo {
-  margin-right: 10px;
+  margin-right: 1.3020833333vw;
 }
 .header_menu_logo:hover {
   opacity: 0.5;
@@ -76,20 +76,20 @@ img {
 }
 .mainvisual_img_content_text {
   color: #ffffff;
-  font-size: 3.6458333333vw;
+  font-size: 4.4270833333vw;
   font-weight: 600;
   font-family: "游明朝体", YuMincho, "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", serif;
   text-shadow: rgba(15, 60, 128, 0.7) 1px 1px 10px, rgba(15, 60, 128, 0.7) -1px 1px 10px, rgba(15, 60, 128, 0.7) 1px -1px 10px, rgba(15, 60, 128, 0.7) -1px -1px 10px;
-  margin-bottom: 6.5104166667vw;
+  margin-bottom: 3.90625vw;
   letter-spacing: 1.3020833333vw;
   line-height: 1.5;
 }
 .mainvisual_img_content_text_sub {
   color: #ffffff;
-  font-size: 2.34375vw;
+  font-size: 3.6458333333vw;
   font-family: "游明朝体", YuMincho, "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", serif;
   text-shadow: rgba(15, 60, 128, 0.7) 1px 1px 10px, rgba(15, 60, 128, 0.7) -1px 1px 10px, rgba(15, 60, 128, 0.7) 1px -1px 10px, rgba(15, 60, 128, 0.7) -1px -1px 10px;
-  letter-spacing: 1.3020833333vw;
+  letter-spacing: 1.0416666667vw;
   line-height: 1.5;
 }
 
@@ -98,7 +98,7 @@ img {
 }
 .content_title {
   color: #ffffff;
-  font-size: 2.8645833333vw;
+  font-size: 3.90625vw;
   letter-spacing: 1.0416666667vw;
   background-color: #00446c;
   height: 13.0208333333vw;
@@ -112,13 +112,13 @@ img {
 }
 .content_text h2 {
   color: #00446c;
-  font-size: 2.6041666667vw;
+  font-size: 3.90625vw;
   letter-spacing: 0.6510416667vw;
   font-weight: 600;
-  margin-bottom: 2.6041666667vw;
+  margin-bottom: 3.90625vw;
 }
 .content_text p {
-  font-size: 1.8229166667vw;
+  font-size: 3.125vw;
   letter-spacing: 0.390625vw;
   line-height: 1.5;
 }
@@ -194,7 +194,7 @@ img {
 }
 .other_content .content_box .content_title_sub {
   text-align: center;
-  font-size: 1.5625vw;
+  font-size: 3.125vw;
 }
 
 .content_cards {
@@ -204,12 +204,12 @@ img {
   background-color: #fd2323;
   color: #fffb00;
   padding: 6.5104166667vw;
-  width: 80%;
+  width: 85%;
   border-radius: 0px 30px 30px 0px;
   margin-bottom: 13.0208333333vw;
 }
 .content_cards_card_title {
-  font-size: 2.6041666667vw;
+  font-size: 3.90625vw;
   font-weight: bold;
   letter-spacing: 0.6510416667vw;
   text-shadow: #373737 1px 1px 5px;
@@ -218,12 +218,13 @@ img {
   margin-top: 2.6041666667vw;
   letter-spacing: 0.6510416667vw;
   color: #ffffff;
-  font-size: 2.34375vw;
+  font-size: 3.125vw;
+  font-weight: bold;
   text-shadow: #373737 2px 2px 3px;
 }
 .content_cards_card_text_sub {
   margin-top: 1.3020833333vw;
-  font-size: 1.3020833333vw;
+  font-size: 2.0833333333vw;
   color: #ffffff;
   text-shadow: #373737 2px 2px 3px;
 }
@@ -235,17 +236,12 @@ img {
   display: none;
 }
 
-#price {
-  padding: 6.5104166667vw 0;
-}
-#price .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2.6041666667vw;
-}
 #price .content_title {
   text-align: center;
   margin-bottom: 3.90625vw;
+}
+#price .content_title_sub {
+  font-size: 2.34375vw;
 }
 #price .price_table {
   background-color: #ffffff;
@@ -256,22 +252,23 @@ img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 #price .price_table h1 {
-  font-size: 3.6458333333vw;
+  font-size: 4.4270833333vw;
   font-weight: 600;
   color: #333;
   margin-bottom: 2.6041666667vw;
+  letter-spacing: 0.6510416667vw;
 }
 #price .price_table p {
-  font-size: 2.0833333333vw;
+  font-size: 3.125vw;
   color: #555;
   line-height: 1.6;
   margin-bottom: 2.6041666667vw;
 }
 #price .price_table p span {
-  font-size: 1.5625vw;
+  font-size: 2.6041666667vw;
 }
 #price .price_table p:last-child {
-  font-size: 3.6458333333vw;
+  font-size: 4.4270833333vw;
   font-weight: 700;
   color: #e94e77;
 }
@@ -282,11 +279,11 @@ img {
 
 #contact .other_content .content_title_sub {
   text-align: center;
-  font-size: 1.5625vw;
+  font-size: 2.34375vw;
 }
 #contact .other_content .content_title_sub2 {
   letter-spacing: 0.6510416667vw;
-  font-size: 1.8229166667vw;
+  font-size: 2.8645833333vw;
   background-color: #d0d0d0;
   padding: 6.5104166667vw;
   line-height: 1.5;
@@ -303,15 +300,18 @@ img {
   font-size: 1.8229166667vw;
 }
 #contact form h1 {
-  font-size: 2.6041666667vw;
+  font-size: 3.90625vw;
   text-align: center;
   font-weight: bold;
   margin-bottom: 6.5104166667vw;
 }
+#contact form p {
+  font-size: 3.3854166667vw;
+}
 #contact form .form_area {
   display: flex;
   justify-content: space-between;
-  margin-top: 2.6041666667vw;
+  margin-top: 6.5104166667vw;
   align-items: center;
 }
 #contact form .form_area input {
@@ -328,12 +328,12 @@ img {
 #contact form .submit_button {
   border: #000000 solid 1px;
   border-radius: 0.6510416667vw;
-  width: 13.0208333333vw;
-  padding: 1.3020833333vw;
+  width: 26.0416666667vw;
+  padding: 2.6041666667vw;
   margin: 0 auto;
-  margin-top: 6.5104166667vw;
+  margin-top: 13.0208333333vw;
   text-align: center;
-  font-size: 1.8229166667vw;
+  font-size: 3.125vw;
   position: relative;
   background-color: rgba(255, 255, 255, 0);
   transition: 0.3s;
@@ -353,9 +353,9 @@ img {
   color: #d9d9d9;
 }
 .footer_logo {
-  width: 7.8125vw;
+  width: 13.0208333333vw;
   margin: 0 auto;
-  margin-bottom: 2.6041666667vw;
+  margin-bottom: 6.5104166667vw;
   transition: 0.3s;
 }
 .footer_logo:hover {
@@ -364,7 +364,7 @@ img {
 .footer_sns {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   padding-bottom: 3.90625vw;
 }
 .footer_sns .mail_icon {
@@ -378,16 +378,16 @@ img {
   width: 2.6041666667vw;
 }
 .footer_info {
-  font-size: 2.34375vw;
-  padding-bottom: 1.3020833333vw;
+  font-size: 3.90625vw;
+  padding-bottom: 3.90625vw;
 }
 .footer_info_text {
-  font-size: 2.0833333333vw;
+  font-size: 3.3854166667vw;
   padding-bottom: 3.90625vw;
 }
 .footer_copy {
-  padding-bottom: 1.3020833333vw;
-  font-size: 1.3020833333vw;
+  padding-bottom: 6.5104166667vw;
+  font-size: 2.6041666667vw;
 }
 
 .content_cards_card {
@@ -546,8 +546,8 @@ img {
     width: 100%;
     display: block;
     text-align: center;
-    font-size: 2.6041666667vw;
-    margin-bottom: 3.125vw;
+    font-size: 3.90625vw;
+    margin-bottom: 10.4166666667vw;
     color: black;
   }
   .headerham__nav .nav-items__item:last-child a {

@@ -235,6 +235,48 @@ img {
   display: none;
 }
 
+#price {
+  padding: 6.5104166667vw 0;
+}
+#price .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2.6041666667vw;
+}
+#price .content_title {
+  text-align: center;
+  margin-bottom: 3.90625vw;
+}
+#price .price_table {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 5.2083333333vw;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#price .price_table h1 {
+  font-size: 3.6458333333vw;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2.6041666667vw;
+}
+#price .price_table p {
+  font-size: 2.0833333333vw;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2.6041666667vw;
+}
+#price .price_table p:last-child {
+  font-size: 3.6458333333vw;
+  font-weight: 700;
+  color: #e94e77;
+}
+#price .price_table:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
 #contact .other_content .content_title_sub {
   text-align: center;
   font-size: 1.5625vw;
@@ -245,6 +287,59 @@ img {
   background-color: #d0d0d0;
   padding: 6.5104166667vw;
   line-height: 1.5;
+}
+#contact form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3.90625vw;
+  background-color: rgba(255, 255, 255, 0.2980392157);
+  padding: 10%;
+  font-size: 1.8229166667vw;
+}
+#contact form h1 {
+  font-size: 2.6041666667vw;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 6.5104166667vw;
+}
+#contact form .form_area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.6041666667vw;
+  align-items: center;
+}
+#contact form .form_area input {
+  border-bottom: #000000 solid 1px;
+  padding: 0.6510416667vw;
+  background-color: rgba(51, 51, 51, 0.1176470588);
+}
+#contact form .form_area textarea {
+  border-bottom: #000000 solid 1px;
+  padding: 0.6510416667vw;
+  height: 26.0416666667vw;
+  background-color: rgba(51, 51, 51, 0.1176470588);
+}
+#contact form .submit_button {
+  border: #000000 solid 1px;
+  border-radius: 0.6510416667vw;
+  width: 13.0208333333vw;
+  padding: 1.3020833333vw;
+  margin: 0 auto;
+  margin-top: 6.5104166667vw;
+  text-align: center;
+  font-size: 1.8229166667vw;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0);
+  transition: 0.3s;
+  box-shadow: 5px 5px 0px 0px rgb(51, 51, 51);
+}
+#contact form .submit_button:hover {
+  box-shadow: 0 0 #333;
+  color: #fff;
+  background-color: #333;
 }
 
 .footer {

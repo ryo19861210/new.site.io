@@ -267,6 +267,9 @@ img {
   line-height: 1.6;
   margin-bottom: 2.6041666667vw;
 }
+#price .price_table p span {
+  font-size: 1.5625vw;
+}
 #price .price_table p:last-child {
   font-size: 3.6458333333vw;
   font-weight: 700;

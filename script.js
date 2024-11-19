@@ -59,3 +59,15 @@ $(document).ready(function() {
     $(this).toggleClass('active');
   });
 });
+$(document).ready(function() {
+  // 入力フィールドとテキストエリアをターゲットにする
+  $('input, textarea').on('input', function() {
+    if ($(this).val() === '') {
+      // 入力がない場合は背景色を設定
+      $(this).css('background-color', '#3333331e');
+    } else {
+      // 入力がある場合は背景色を透明に
+      $(this).css('background-color', 'transparent');
+    }
+  });
+});

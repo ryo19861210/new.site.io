@@ -71,3 +71,48 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).on('load scroll', function () {
+  winScroll = $(window).scrollTop();
+  winHeight = $(window).height();
+  scrollPos = winHeight * 0.9 + winScroll;
+
+  $(".slidein").each(function () {
+    if ($(this).offset().top <= scrollPos) {
+      $(this).addClass("show");
+
+      // 右からスライドインするカードに対応
+      if ($(this).hasClass("right")) {
+        $(this).removeClass("slide_right"); // 初期位置のクラスを削除
+      }
+    } else {
+      $(this).removeClass("show");
+
+      // スライドアウト時に初期位置に戻す
+      if ($(this).hasClass("right")) {
+        $(this).addClass("slide_right");
+      }
+    }
+  });
+});
+
+// 画面に出現させる関数
+function showOnScroll() {
+  const elements = document.querySelectorAll('.right2');
+
+  elements.forEach(element => {
+    const elementTop = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // 要素が画面内に入った時
+    if (elementTop < windowHeight * 0.8) {
+      element.classList.add('show');
+    }
+  });
+}
+
+// ページのスクロール時に関数を呼び出し
+window.addEventListener('scroll', showOnScroll);
+
+// 初期表示（ページロード時にも適用）
+showOnScroll();

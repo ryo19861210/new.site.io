@@ -208,6 +208,25 @@ img {
   border-radius: 0px 30px 30px 0px;
   margin-bottom: 13.0208333333vw;
 }
+.content_cards_card_popup {
+  font-size: 3.125vw;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 5.2083333333vw;
+  text-shadow: #373737 1px 1px 5px;
+  transform: rotate(-5deg);
+  position: relative;
+}
+.content_cards_card_popup::after {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 35.15625vw;
+  height: 1.953125vw;
+  background-color: #0066a1;
+}
 .content_cards_card_title {
   font-size: 3.90625vw;
   font-weight: bold;
